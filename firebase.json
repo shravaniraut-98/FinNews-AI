@@ -1,0 +1,47 @@
+{
+  "hosting": {
+    "public": "frontend",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "headers": [
+      {
+        "source": "**/*.json",
+        "headers": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "Access-Control-Allow-Origin",
+            "value": "*"
+          }
+        ]
+      }
+    ],
+    "rewrites": [
+      {
+        "source": "/health",
+        "destination": "/health.json"
+      },
+      {
+        "source": "/api/news",
+        "destination": "/api/news.json"
+      },
+      {
+        "source": "/api/simplify/1",
+        "destination": "/api/simplify/1.json"
+      },
+      {
+        "source": "/api/simplify/**",
+        "destination": "/api/simplify/1.json"
+      },
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}

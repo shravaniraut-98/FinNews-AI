@@ -1,0 +1,36 @@
+{
+  "id": 1,
+  "title": "RBI Keeps Repo Rate Unchanged at 6.5% Amid Inflation Watch",
+  "description": "The Reserve Bank of India Monetary Policy Committee decided to maintain the benchmark repo rate at 6.5%, focusing on withdrawal of accommodation to align inflation with the 4% target.",
+  "source": "Economic Times",
+  "publishedAt": "2 hours ago",
+  "category": "Banking",
+  "region": "India",
+  "sentiment": "Neutral",
+  "importance": "High",
+  "image": "https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?auto=format&fit=crop&w=800&q=80",
+  "summary": "The Reserve Bank of India kept benchmark interest rates steady to balance economic growth while keeping consumer inflation in check.",
+  "whatHappened": "The RBI Monetary Policy Committee voted to keep the key lending rate unchanged at 6.5% for the seventh consecutive policy meeting.",
+  "whyItMatters": "Steady interest rates keep home loan and car loan EMIs stable, while ensuring commercial banks maintain steady deposit interest yields for savers.",
+  "keyTakeaways": [
+    "Benchmark repo rate remains fixed at 6.5%",
+    "RBI projects annual real GDP growth at 7.0%",
+    "Consumer price inflation target maintained at 4.5% for FY25"
+  ],
+  "whoIsAffected": "Home loan borrowers, bank depositors, commercial banks, and real estate developers across India.",
+  "terms": [
+    {
+      "name": "Repo Rate",
+      "explanation": "The key interest rate at which the central bank (RBI) lends short-term money to commercial banks."
+    },
+    {
+      "name": "Inflation",
+      "explanation": "The rate at which general prices for goods and services increase over time, eroding purchasing power."
+    },
+    {
+      "name": "MPC",
+      "explanation": "Monetary Policy Committee — the committee responsible for fixing the benchmark interest rate in India."
+    }
+  ],
+  "url": "https://economictimes.indiatimes.com"
+}

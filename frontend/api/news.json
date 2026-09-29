@@ -1,0 +1,194 @@
+[
+  {
+    "id": 1,
+    "title": "RBI Keeps Repo Rate Unchanged at 6.5% Amid Inflation Watch",
+    "description": "The Reserve Bank of India Monetary Policy Committee decided to maintain the benchmark repo rate at 6.5%, focusing on withdrawal of accommodation to align inflation with the 4% target.",
+    "source": "Economic Times",
+    "publishedAt": "2 hours ago",
+    "category": "Banking",
+    "region": "India",
+    "sentiment": "Neutral",
+    "importance": "High",
+    "image": "https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?auto=format&fit=crop&w=800&q=80",
+    "summary": "The Reserve Bank of India kept benchmark interest rates steady to balance economic growth while keeping consumer inflation in check.",
+    "whatHappened": "The RBI Monetary Policy Committee voted to keep the key lending rate unchanged at 6.5% for the seventh consecutive policy meeting.",
+    "whyItMatters": "Steady interest rates keep home loan and car loan EMIs stable, while ensuring commercial banks maintain steady deposit interest yields for savers.",
+    "keyTakeaways": [
+      "Benchmark repo rate remains fixed at 6.5%",
+      "RBI projects annual real GDP growth at 7.0%",
+      "Consumer price inflation target maintained at 4.5% for FY25"
+    ],
+    "whoIsAffected": "Home loan borrowers, bank depositors, commercial banks, and real estate developers across India.",
+    "terms": [
+      {
+        "name": "Repo Rate",
+        "explanation": "The key interest rate at which the central bank (RBI) lends short-term money to commercial banks."
+      },
+      {
+        "name": "Inflation",
+        "explanation": "The rate at which general prices for goods and services increase over time, eroding purchasing power."
+      },
+      {
+        "name": "MPC",
+        "explanation": "Monetary Policy Committee — the committee responsible for fixing the benchmark interest rate in India."
+      }
+    ],
+    "url": "https://economictimes.indiatimes.com"
+  },
+  {
+    "id": 2,
+    "title": "Federal Reserve Signals Potential Rate Cut as US Inflation Cools to 2.9%",
+    "description": "Federal Reserve Chairman indicated that monetary policy adjustments are approaching as consumer price metrics normalize near the central bank's long-term target.",
+    "source": "Financial Times",
+    "publishedAt": "3 hours ago",
+    "category": "Economy",
+    "region": "Global",
+    "sentiment": "Positive",
+    "importance": "High",
+    "image": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=800&q=80",
+    "summary": "The US Federal Reserve is preparing to lower interest rates as price pressures ease across energy, goods, and services.",
+    "whatHappened": "US inflation slowed to a 2.9% annual rate, prompting Fed officials to signal upcoming reductions in borrowing costs.",
+    "whyItMatters": "Lower US interest rates generally boost global equity markets, weaken the US dollar, and increase foreign capital flows into emerging markets.",
+    "keyTakeaways": [
+      "US Consumer Price Index (CPI) dropped below 3.0%",
+      "Stock markets reacted positively with broad equity index gains",
+      "Global central banks expected to follow easing monetary policy"
+    ],
+    "whoIsAffected": "Global investors, mortgage holders, multinational corporations, and currency traders.",
+    "terms": [
+      {
+        "name": "Federal Reserve",
+        "explanation": "The central bank of the United States that oversees national monetary policy."
+      },
+      {
+        "name": "CPI",
+        "explanation": "Consumer Price Index — a primary metric used to measure average price changes in goods and services."
+      }
+    ],
+    "url": "https://www.ft.com"
+  },
+  {
+    "id": 3,
+    "title": "NVIDIA Surpasses $3 Trillion Valuation Driven by Next-Gen AI Chip Demand",
+    "description": "NVIDIA equity market cap reached landmark highs as global tech enterprises surge orders for Blackwell architecture AI microprocessors and datacenter hardware.",
+    "source": "Reuters",
+    "publishedAt": "4 hours ago",
+    "category": "Technology",
+    "region": "Global",
+    "sentiment": "Positive",
+    "importance": "High",
+    "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80",
+    "summary": "High demand for specialized AI hardware propelled semiconductor giant NVIDIA into the top tier of global stock valuations.",
+    "whatHappened": "NVIDIA's market capitalization crossed $3 Trillion following record quarterly revenue guidance from cloud computing providers building generative AI tools.",
+    "whyItMatters": "The massive expansion in AI hardware spending reflects a fundamental shift in corporate infrastructure budgets worldwide.",
+    "keyTakeaways": [
+      "Quarterly datacenter revenue expanded by over 200% year-over-year",
+      "Tech sector equities led S&P 500 and NASDAQ gains",
+      "Demand for high-bandwidth memory semiconductor chips remains supply-constrained"
+    ],
+    "whoIsAffected": "Technology companies, cloud providers, retail investors, and semiconductor suppliers.",
+    "terms": [
+      {
+        "name": "Market Cap",
+        "explanation": "Market Capitalization — the total monetary value of all outstanding shares of a publicly traded company."
+      },
+      {
+        "name": "Bull Market",
+        "explanation": "A financial market condition where asset prices are continuously rising or expected to rise."
+      }
+    ],
+    "url": "https://www.reuters.com"
+  },
+  {
+    "id": 4,
+    "title": "Tata Motors Commercial Vehicle Division Reports 18% Profit Surge",
+    "description": "Tata Motors posted strong quarterly performance behind robust domestic fleet demand, expansion in electric bus orders, and margin improvements in JLR operations.",
+    "source": "Business Standard",
+    "publishedAt": "5 hours ago",
+    "category": "Automotive",
+    "region": "India",
+    "sentiment": "Positive",
+    "importance": "Medium",
+    "image": "https://images.unsplash.com/photo-1556742049-0a67dd0a581e?auto=format&fit=crop&w=800&q=80",
+    "summary": "Tata Motors profit increased due to heavy vehicle demand across Indian infrastructure projects and higher sales of premium JLR vehicles.",
+    "whatHappened": "Automotive leader Tata Motors reported an 18% jump in net profit alongside record EBITDA margins across its passenger and commercial vehicle portfolio.",
+    "whyItMatters": "Commercial vehicle sales serve as a key economic barometer for industrial activity, logistics demand, and infrastructure expansion in India.",
+    "keyTakeaways": [
+      "Net consolidated profit rose 18% year-over-year",
+      "EV commercial bus fleet orders doubled in metro transit tenders",
+      "Free cash flow generation hit multi-quarter highs"
+    ],
+    "whoIsAffected": "Auto sector shareholders, component suppliers, fleet operators, and logistics buyers.",
+    "terms": [
+      {
+        "name": "EBITDA",
+        "explanation": "Earnings Before Interest, Taxes, Depreciation, and Amortization — a measure of core operational profitability."
+      },
+      {
+        "name": "Margin",
+        "explanation": "The percentage ratio of profit earned relative to total revenue generated."
+      }
+    ],
+    "url": "https://www.business-standard.com"
+  },
+  {
+    "id": 5,
+    "title": "Apple Announces New Generative AI Strategy Integrated Across iOS Devices",
+    "description": "Apple unveiled its native artificial intelligence ecosystem, partnering with leading LLM providers to bring automated summarization and smart Siri features to smartphones.",
+    "source": "Wall Street Journal",
+    "publishedAt": "6 hours ago",
+    "category": "Technology",
+    "region": "Global",
+    "sentiment": "Positive",
+    "importance": "Medium",
+    "image": "https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?auto=format&fit=crop&w=800&q=80",
+    "summary": "Apple is embedding artificial intelligence directly into its device operating systems, boosting consumer hardware upgrade cycles.",
+    "whatHappened": "Apple introduced on-device AI tools for news summarization, automated writing assistance, and enhanced Siri workflow integration.",
+    "whyItMatters": "Bringing AI functionality to hundreds of millions of smartphone users accelerates consumer adoption of AI applications globally.",
+    "keyTakeaways": [
+      "On-device processing prioritizes user privacy while running lightweight models",
+      "Analyst consensus expects accelerated iPhone upgrade cycle",
+      "Services segment revenue projected to expand"
+    ],
+    "whoIsAffected": "Consumer electronics buyers, software developers, and Apple investors.",
+    "terms": [
+      {
+        "name": "Services Revenue",
+        "explanation": "Income generated from subscription products like iCloud, App Store, and digital media services."
+      }
+    ],
+    "url": "https://www.wsj.com"
+  },
+  {
+    "id": 6,
+    "title": "Global Crude Oil Prices Dip to $78 as OPEC+ Outlines Production Plan",
+    "description": "Brent crude futures declined 2% after member nations outlined a phased plan to restore voluntary crude oil production cuts starting later this year.",
+    "source": "Bloomberg",
+    "publishedAt": "8 hours ago",
+    "category": "Energy",
+    "region": "Global",
+    "sentiment": "Negative",
+    "importance": "Medium",
+    "image": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80",
+    "summary": "Oil prices dropped as major oil-exporting countries prepared to gradually increase oil supplies into the global market.",
+    "whatHappened": "Brent crude settled below $78 a barrel following announcements from OPEC+ members regarding output normalization schedules.",
+    "whyItMatters": "Cheaper crude oil reduces import bill costs for oil-importing nations like India, helping to lower transport fuel costs and ease inflation.",
+    "keyTakeaways": [
+      "Brent crude futures dropped 2.1% to $78.40 per barrel",
+      "Lower oil import prices help reduce national trade deficit metrics",
+      "Airlines and logistics firms benefit from reduced fuel overhead"
+    ],
+    "whoIsAffected": "Oil producers, airline transport firms, refiners, and retail fuel consumers.",
+    "terms": [
+      {
+        "name": "OPEC+",
+        "explanation": "Organization of the Petroleum Exporting Countries plus allied oil-producing nations that coordinate crude supply."
+      },
+      {
+        "name": "Trade Deficit",
+        "explanation": "An economic condition where a nation imports more total value in goods/services than it exports."
+      }
+    ],
+    "url": "https://www.bloomberg.com"
+  }
+]

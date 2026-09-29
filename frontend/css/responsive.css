@@ -1,0 +1,241 @@
+/* ==========================================================================
+   FINNEWS AI - Responsive Stylesheet
+   Breakpoints: Desktop (1280px+), Tablet/Laptop (1024px), Mobile (768px - 375px)
+   ========================================================================== */
+
+/* Large Desktop (1440px+) */
+@media (min-width: 1440px) {
+    .container {
+        max-width: 1320px;
+    }
+    
+    .hero-headline {
+        font-size: 3rem;
+    }
+
+    .pulse-cards-grid {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .articles-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Medium Desktop / Laptop (1024px - 1279px) */
+@media (max-width: 1024px) {
+    .hero-theme-wrapper {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .hero-right-showcase {
+        min-height: 480px;
+    }
+
+    .showcase-card-dark {
+        width: 100%;
+    }
+
+    .showcase-card-light {
+        width: 90%;
+        left: 0;
+    }
+
+    .pulse-cards-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .articles-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .glossary-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .steps-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .tech-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+}
+
+/* Tablet (768px - 1023px) */
+@media (max-width: 768px) {
+    /* Mobile Header & Hamburger */
+    .mobile-toggle {
+        display: flex;
+    }
+
+    .nav-menu {
+        position: absolute;
+        top: 72px;
+        left: 0;
+        width: 100%;
+        background-color: #FFFFFF;
+        border-bottom: 1px solid var(--border);
+        box-shadow: var(--shadow-lg);
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1.5rem;
+        gap: 1.25rem;
+        display: none;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        gap: 0.85rem;
+    }
+
+    .nav-link {
+        width: 100%;
+        padding: 0.5rem 0;
+    }
+
+    .nav-actions {
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    /* Hero Section */
+    .hero-section {
+        padding: 2.5rem 0 2rem;
+    }
+
+    .hero-headline {
+        font-size: 2.15rem;
+    }
+
+    .hero-search-bar input {
+        font-size: 0.9rem;
+        padding-left: 2.85rem;
+    }
+
+    .hero-cta-actions {
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+    }
+
+    .hero-cta-actions .btn {
+        width: 100%;
+    }
+
+    /* Market Pulse Grid */
+    .pulse-cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Stats Grid */
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Toolbar & Category Scroll */
+    .toolbar-card {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .category-filters-scroll {
+        width: 100%;
+    }
+
+    .sort-selector {
+        justify-content: space-between;
+    }
+
+    /* Articles */
+    .articles-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Fetch Callout */
+    .fetch-card {
+        flex-direction: column;
+        align-items: stretch;
+        text-align: center;
+    }
+
+    .fetch-card-content {
+        flex-direction: column;
+    }
+
+    .fetch-card-cta .btn {
+        width: 100%;
+    }
+
+    /* Glossary & Steps */
+    .glossary-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .steps-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Modal Layouts */
+    .modal-terms-grid, .related-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .ask-ai-input-group {
+        flex-direction: column;
+    }
+
+    .modal-footer {
+        flex-direction: column;
+    }
+
+    .modal-footer .btn {
+        width: 100%;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+    }
+
+    .bottom-content {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+    }
+}
+
+/* Mobile Small (375px - 480px) */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 1rem;
+    }
+
+    .hero-headline {
+        font-size: 1.85rem;
+    }
+
+    .pulse-cards-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .tech-grid {
+        grid-template-columns: 1fr;
+    }
+}

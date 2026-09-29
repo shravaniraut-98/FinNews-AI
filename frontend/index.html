@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="FinNews AI - Financial News Simplifier. Transform complex financial news into clear, simple AI insights, key takeaways, and financial term explanations.">
+    <meta name="theme-color" content="#7C3AED">
+    <title>FinNews AI | Financial News Simplifier & AI Chatbook</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body class="theme-lavender-body">
+
+    <!-- Decorative Background Circles (Matching screenshot theme) -->
+    <div class="theme-bg-decorations" aria-hidden="true">
+        <div class="bg-circle circle-top-left"></div>
+        <div class="bg-circle circle-center-top"></div>
+        <div class="bg-circle circle-bottom-right"></div>
+        <div class="bg-circle circle-bottom-left"></div>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="navbar-header" id="navbar">
+        <div class="container nav-container">
+            <!-- Brand Logo -->
+            <a href="#hero" class="nav-brand" aria-label="FinNews AI Homepage">
+                <div class="brand-logo-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19 3H5C3.89543 3 3 3.89543 3 5V19C3 20.1046 3.89543 21 5 21H19C20.1046 21 21 20.1046 21 19V5C21 3.89543 20.1046 3 19 3Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M7 7H17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M7 11H17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M7 15H12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        <circle cx="16.5" cy="15.5" r="2.5" fill="#7C3AED"/>
+                    </svg>
+                </div>
+                <div class="brand-text">
+                    <span class="brand-name">FinNews <span class="brand-ai">AI</span></span>
+                    <span class="brand-subtitle">Financial News Simplifier</span>
+                </div>
+            </a>
+
+            <!-- Mobile Hamburger Toggle -->
+            <button class="mobile-toggle" id="mobile-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle Navigation Menu">
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+            </button>
+
+            <!-- Navigation Links -->
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#hero" class="nav-link active">Home</a></li>
+                    <li><a href="#dashboard" class="nav-link">Intelligence</a></li>
+                    <li><a href="#explorer" class="nav-link">News Explorer</a></li>
+                    <li><a href="#chatbook" class="nav-link">Chatbook AI</a></li>
+                    <li><a href="#glossary" class="nav-link">Glossary</a></li>
+                    <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                </ul>
+
+                <!-- Header Actions -->
+                <div class="nav-actions">
+                    <button class="btn btn-outline btn-sm btn-pill" id="btn-refresh-nav" title="Refresh Latest Financial News">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 4v6h-6M1 20v-6h6"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg>
+                        Refresh News
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- Hero Section (Exact Replica of Attached Screenshot Theme Layout) -->
+        <section class="hero-section" id="hero">
+            <div class="container hero-theme-wrapper">
+                
+                <!-- Left Column: WebbyPages Style Presentation & Features -->
+                <div class="hero-left-content">
+                    <h2 class="theme-kit-brand">FinNews AI</h2>
+                    <p class="theme-kit-tagline">Get inspired and build financial literacy faster with our news simplifier kit</p>
+                    
+                    <div class="hero-follow-bar">
+                        <span class="follow-label">Powered by:</span>
+                        <div class="follow-links">
+                            <span class="social-chip">🌐 Web API</span>
+                            <span class="social-chip">⚡ Groq Llama 3.3</span>
+                            <span class="social-chip">📰 NewsAPI</span>
+                            <span class="social-chip">🗄️ SQLite</span>
+                        </div>
+                    </div>
+
+                    <!-- Bullet Checklist matching screenshot -->
+                    <ul class="hero-check-list">
+                        <li>
+                            <span class="check-badge">✓</span>
+                            <span>Real-Time News Ingestion & Summarization</span>
+                        </li>
+                        <li>
+                            <span class="check-badge">✓</span>
+                            <span>10+ Jargon Terms Simplified to Plain English</span>
+                        </li>
+                        <li>
+                            <span class="check-badge">✓</span>
+                            <span>Executive Key Bullet Points & Market Insights</span>
+                        </li>
+                        <li>
+                            <span class="check-badge">✓</span>
+                            <span>Multi-Category Filterable News Explorer UI</span>
+                        </li>
+                    </ul>
+
+                    <div class="hero-cta-group">
+                        <button class="btn btn-primary btn-pill btn-lg hero-btn-glow" id="btn-hero-fetch">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                            Fetch & Simplify News
+                        </button>
+                        <a href="#explorer" class="btn btn-secondary btn-pill btn-lg">
+                            Explore News
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Column: Financial News Hero Image Showcase -->
+                <div class="hero-right-image-showcase">
+                    <div class="hero-image-card">
+                        <img src="images/financial-news-hero.png" alt="Financial News Papers and Stock Market Analysis" class="hero-img-display" loading="eager">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Market Pulse Section -->
+        <section class="market-pulse-section">
+            <div class="container">
+                <div class="pulse-header-row">
+                    <h3 class="pulse-title">
+                        <span class="pulse-icon">📈</span> Market Pulse
+                        <span class="pulse-tag">API Integration Ready</span>
+                    </h3>
+                    <span class="pulse-disclaimer">Market indices displayed for UI demonstration. News summaries remain separate.</span>
+                </div>
+
+                <div class="pulse-cards-grid">
+                    <div class="pulse-card">
+                        <div class="pulse-card-top">
+                            <span class="pulse-symbol">NIFTY 50</span>
+                            <span class="pulse-flag">🇮🇳 NSE</span>
+                        </div>
+                        <div class="pulse-value">22,480.15</div>
+                        <div class="pulse-status-text">Connect market data API</div>
+                    </div>
+
+                    <div class="pulse-card">
+                        <div class="pulse-card-top">
+                            <span class="pulse-symbol">SENSEX</span>
+                            <span class="pulse-flag">🇮🇳 BSE</span>
+                        </div>
+                        <div class="pulse-value">73,950.40</div>
+                        <div class="pulse-status-text">Connect market data API</div>
+                    </div>
+
+                    <div class="pulse-card">
+                        <div class="pulse-card-top">
+                            <span class="pulse-symbol">NASDAQ</span>
+                            <span class="pulse-flag">🇺🇸 US</span>
+                        </div>
+                        <div class="pulse-value">16,340.80</div>
+                        <div class="pulse-status-text">Connect market data API</div>
+                    </div>
+
+                    <div class="pulse-card">
+                        <div class="pulse-card-top">
+                            <span class="pulse-symbol">S&P 500</span>
+                            <span class="pulse-flag">🇺🇸 US</span>
+                        </div>
+                        <div class="pulse-value">5,180.25</div>
+                        <div class="pulse-status-text">Connect market data API</div>
+                    </div>
+
+                    <div class="pulse-card">
+                        <div class="pulse-card-top">
+                            <span class="pulse-symbol">GOLD</span>
+                            <span class="pulse-flag">🪙 Commodity</span>
+                        </div>
+                        <div class="pulse-value">$2,340 / oz</div>
+                        <div class="pulse-status-text">Connect market data API</div>
+                    </div>
+
+                    <div class="pulse-card">
+                        <div class="pulse-card-top">
+                            <span class="pulse-symbol">USD / INR</span>
+                            <span class="pulse-flag">💱 Forex</span>
+                        </div>
+                        <div class="pulse-value">₹83.35</div>
+                        <div class="pulse-status-text">Connect market data API</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Financial Intelligence Dashboard Metrics -->
+        <section class="dashboard-section" id="dashboard">
+            <div class="container">
+                
+                <!-- Today's Financial Brief Card -->
+                <div class="financial-brief-card theme-glass-card">
+                    <div class="brief-main-info">
+                        <div class="brief-badge-group">
+                            <span class="brief-badge">📊 TODAY'S FINANCIAL BRIEF</span>
+                            <span class="brief-time" id="stat-last-updated">Updated Just Now</span>
+                        </div>
+                        <h2 class="brief-title" id="brief-story-count">8 Important Stories Today</h2>
+                        <p class="brief-overview" id="brief-overview-text">
+                            Today's top stories focus on central bank rate trajectories, Inflation trends, Tata Motors profits, and enterprise AI hardware expansions.
+                        </p>
+                        <div class="brief-categories-row" id="brief-categories-list">
+                            <span class="brief-cat-pill">Banking</span>
+                            <span class="brief-cat-pill">Economy</span>
+                            <span class="brief-cat-pill">Technology</span>
+                            <span class="brief-cat-pill">Automotive</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stats Overview Grid -->
+                <div class="stats-grid">
+                    <div class="stat-card theme-glass-card">
+                        <div class="stat-icon icon-purple">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 20H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h10l5 5v11a2 2 0 0 1-2 2z"/><polyline points="14 4 14 9 19 9"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+                        </div>
+                        <div class="stat-info">
+                            <span class="stat-value" id="stat-latest-count">8</span>
+                            <span class="stat-label">Total Articles</span>
+                        </div>
+                    </div>
+
+                    <div class="stat-card theme-glass-card">
+                        <div class="stat-icon icon-indigo">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 1 0 10 10H12V2z"/><path d="M12 2a10 10 0 0 1 10 10h-10V2z"/></svg>
+                        </div>
+                        <div class="stat-info">
+                            <span class="stat-value" id="stat-summaries-count">8</span>
+                            <span class="stat-label">AI Summaries</span>
+                        </div>
+                    </div>
+
+                    <div class="stat-card theme-glass-card">
+                        <div class="stat-icon icon-emerald">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1 4-10z"/></svg>
+                        </div>
+                        <div class="stat-info">
+                            <span class="stat-value" id="stat-sources-count">5</span>
+                            <span class="stat-label">News Sources</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Fetch & Simplify Trigger Section -->
+        <section class="fetch-action-section">
+            <div class="container">
+                <div class="fetch-card theme-glass-card">
+                    <div class="fetch-card-content">
+                        <div class="fetch-icon-wrapper">🤖</div>
+                        <div class="fetch-text">
+                            <h3>Fetch Latest Financial News</h3>
+                            <p>Retrieve fresh financial articles and generate simple AI bullet breakdowns instantly.</p>
+                        </div>
+                    </div>
+                    <div class="fetch-card-cta">
+                        <button class="btn btn-primary btn-pill btn-lg hero-btn-glow" id="btn-fetch-main">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                            Fetch & Simplify News
+                        </button>
+                    </div>
+
+                    <!-- Multi-Stage Loading Overlay -->
+                    <div class="loading-overlay hidden" id="loading-overlay" aria-live="polite">
+                        <div class="loading-content">
+                            <div class="spinner-ring"></div>
+                            <div class="loading-stage-text" id="loading-stage-text">Step 1: Fetching financial news...</div>
+                            <div class="progress-bar-bg">
+                                <div class="progress-bar-fill" id="progress-bar-fill"></div>
+                            </div>
+                            <div class="loading-steps-indicator">
+                                <span class="step-dot active" id="step-dot-1" title="Fetch News">1</span>
+                                <span class="step-connector"></span>
+                                <span class="step-dot" id="step-dot-2" title="Process Articles">2</span>
+                                <span class="step-connector"></span>
+                                <span class="step-dot" id="step-dot-3" title="Generate Summaries">3</span>
+                                <span class="step-connector"></span>
+                                <span class="step-dot" id="step-dot-4" title="Prepare Results">4</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- News Explorer Section -->
+        <section class="explorer-section" id="explorer">
+            <div class="container">
+                <div class="explorer-header">
+                    <div>
+                        <h2 class="section-title">Explore Financial News</h2>
+                        <p class="section-subtitle">Filter, search, and understand AI-simplified financial stories.</p>
+                    </div>
+                    <div class="results-counter" id="results-counter">
+                        Showing <strong>8</strong> stories
+                    </div>
+                </div>
+
+                <!-- Search Input with Chips -->
+                <div class="hero-search-wrapper mb-4">
+                    <div class="hero-search-bar">
+                        <svg class="search-svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                        <input type="text" id="search-input" placeholder="Search company, stock, topic or keyword (e.g. Apple, RBI, NVIDIA, Inflation)..." aria-label="Search financial news by company, stock or topic">
+                        <button class="clear-search-btn hidden" id="clear-search-btn" aria-label="Clear Search">&times;</button>
+                    </div>
+
+                    <div class="search-chips-row">
+                        <span class="chips-label">Try searching:</span>
+                        <button class="search-example-chip" data-query="Apple">Apple</button>
+                        <button class="search-example-chip" data-query="NVIDIA">NVIDIA</button>
+                        <button class="search-example-chip" data-query="Tata Motors">Tata Motors</button>
+                        <button class="search-example-chip" data-query="Inflation">Inflation</button>
+                        <button class="search-example-chip" data-query="RBI">RBI</button>
+                        <button class="search-example-chip" data-query="Interest Rates">Interest Rates</button>
+                        <button class="search-example-chip" data-query="Technology">Technology</button>
+                    </div>
+                </div>
+
+                <!-- Toolbar & Filters Card -->
+                <div class="toolbar-card theme-glass-card">
+                    <!-- Region Switcher Toggle -->
+                    <div class="region-switcher" role="group" aria-label="Region Filter">
+                        <span class="region-label">Region:</span>
+                        <button class="region-btn active" data-region="all">All</button>
+                        <button class="region-btn" data-region="India">🇮🇳 India</button>
+                        <button class="region-btn" data-region="Global">🌐 Global</button>
+                    </div>
+
+                    <!-- Category Pills Filter Bar -->
+                    <div class="category-filters-scroll" role="tablist" aria-label="News Categories">
+                        <button class="category-btn active" data-category="ALL" role="tab" aria-selected="true">ALL</button>
+                        <button class="category-btn" data-category="MARKETS" role="tab" aria-selected="false">MARKETS</button>
+                        <button class="category-btn" data-category="BUSINESS" role="tab" aria-selected="false">BUSINESS</button>
+                        <button class="category-btn" data-category="ECONOMY" role="tab" aria-selected="false">ECONOMY</button>
+                        <button class="category-btn" data-category="TECHNOLOGY" role="tab" aria-selected="false">TECHNOLOGY</button>
+                        <button class="category-btn" data-category="BANKING" role="tab" aria-selected="false">BANKING</button>
+                        <button class="category-btn" data-category="AUTOMOTIVE" role="tab" aria-selected="false">AUTOMOTIVE</button>
+                        <button class="category-btn" data-category="PHARMA" role="tab" aria-selected="false">PHARMA</button>
+                        <button class="category-btn" data-category="ENERGY" role="tab" aria-selected="false">ENERGY</button>
+                        <button class="category-btn" data-category="GLOBAL" role="tab" aria-selected="false">GLOBAL</button>
+                        <button class="category-btn btn-saved-tab" id="btn-saved-articles" role="tab" aria-selected="false">★ Saved (0)</button>
+                    </div>
+
+                    <!-- Sorting Dropdown Selector -->
+                    <div class="sort-selector">
+                        <label for="sort-dropdown" class="sort-label">Sort By:</label>
+                        <select id="sort-dropdown" class="sort-select" aria-label="Sort articles">
+                            <option value="latest">Latest</option>
+                            <option value="oldest">Oldest</option>
+                            <option value="relevant">Most Relevant</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Articles Cards Container Grid -->
+                <div class="articles-grid" id="articles-container">
+                    <!-- Dynamic rendering by ui.js -->
+                </div>
+
+                <!-- Empty State Container -->
+                <div class="empty-state-container hidden" id="empty-state">
+                    <div class="empty-state-card theme-glass-card">
+                        <div class="empty-icon">🔍</div>
+                        <h3>No financial stories match your search</h3>
+                        <p>We couldn't find any articles matching your search term or category filter. Try clearing filters or searching another keyword.</p>
+                        <button class="btn btn-secondary btn-pill" id="btn-reset-filters">Clear Search & Filters</button>
+                    </div>
+                </div>
+
+                <!-- Error State Container -->
+                <div class="error-state-container hidden" id="error-state">
+                    <!-- Dynamic rendering by ui.js -->
+                </div>
+            </div>
+        </section>
+
+        <!-- CHATBOOK AI SECTION -->
+        <section class="chatbook-section" id="chatbook">
+            <div class="container">
+                <div class="chatbook-card theme-glass-card">
+                    <div class="chatbook-header">
+                        <div class="chatbook-title-group">
+                            <span class="chatbook-badge-icon">✨</span>
+                            <div>
+                                <h2 class="chatbook-title">FinNews Gemini AI Chatbook</h2>
+                                <p class="chatbook-subtitle">Ask questions about market news, finance concepts, company performance, or economic policies.</p>
+                            </div>
+                        </div>
+                        <div class="chatbook-actions-group">
+                            <span class="chatbook-status-tag" id="chatbook-model-tag">✨ Gemini 2.5 & News API</span>
+                            <button class="btn btn-secondary btn-pill btn-sm" id="btn-open-api-keys-modal" title="Configure API Keys">⚙️ API Keys</button>
+                        </div>
+                    </div>
+
+                    <!-- Chatbook Conversation Body -->
+                    <div class="chatbook-messages-body" id="chatbook-messages">
+                        <div class="chatbook-msg msg-ai">
+                            <div class="msg-avatar">🤖</div>
+                            <div class="msg-content">
+                                <strong>FinNews Gemini AI Chatbook:</strong>
+                                <p>Hello! I am your AI Financial Assistant powered by <strong>Google Gemini API</strong> and <strong>News API</strong>. You can ask me questions about today's market headlines, inflation metrics, stock news (NVIDIA, Tata Motors, Apple), or finance terminology!</p>
+                                <p class="chatbook-tip-note" style="margin-top: 8px; font-size: 0.85rem; color: #a78bfa;">💡 <em>Tip: Add your free Google Gemini API Key in Chat Settings (⚙️) to unlock live generative responses!</em></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Preset Quick Suggestion Chips -->
+                    <div class="chatbook-quick-chips">
+                        <span class="chips-title">Suggested prompts:</span>
+                        <button class="chatbook-prompt-chip" data-prompt="What's happening in the financial market today?">What's happening in the market today?</button>
+                        <button class="chatbook-prompt-chip" data-prompt="Explain inflation and interest rates in simple terms">Explain Inflation & Interest Rates</button>
+                        <button class="chatbook-prompt-chip" data-prompt="Why is NVIDIA stock reaching record valuation highs?">Why is NVIDIA growing so fast?</button>
+                        <button class="chatbook-prompt-chip" data-prompt="What is the Repo Rate set by the RBI?">What is the RBI Repo Rate?</button>
+                    </div>
+
+                    <!-- Chatbook Input Bar -->
+                    <div class="chatbook-input-bar">
+                        <input type="text" id="chatbook-input" placeholder="Type a message or ask Gemini AI about financial news..." aria-label="Chatbook message input">
+                        <button class="btn btn-primary btn-pill btn-chatbook-icon-send" id="btn-chatbook-send" title="Send Message" aria-label="Send Message">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Financial Jargon Glossary Section -->
+        <section class="glossary-section" id="glossary">
+            <div class="container">
+                <div class="text-center section-header-centered">
+                    <span class="badge-pill">Financial Literacy</span>
+                    <h2 class="section-title">Financial Terms Explained Simply</h2>
+                    <p class="section-subtitle">Demystifying common economic and market terminology in plain English.</p>
+                </div>
+
+                <div class="glossary-grid">
+                    <div class="glossary-card theme-glass-card">
+                        <div class="term-badge">REPO RATE</div>
+                        <h4>Repo Rate</h4>
+                        <p>The benchmark interest rate at which the central bank (like RBI or Fed) lends money to commercial banks.</p>
+                    </div>
+
+                    <div class="glossary-card theme-glass-card">
+                        <div class="term-badge">INFLATION</div>
+                        <h4>Inflation</h4>
+                        <p>The rate at which general prices for goods and services rise over time, reducing purchasing power.</p>
+                    </div>
+
+                    <div class="glossary-card theme-glass-card">
+                        <div class="term-badge">MARKET CAP</div>
+                        <h4>Market Capitalization</h4>
+                        <p>The total dollar value of a company's outstanding shares of stock in the market.</p>
+                    </div>
+
+                    <div class="glossary-card theme-glass-card">
+                        <div class="term-badge">EBITDA</div>
+                        <h4>EBITDA</h4>
+                        <p>Earnings Before Interest, Taxes, Depreciation, and Amortization — a measure of operational profit.</p>
+                    </div>
+
+                    <div class="glossary-card theme-glass-card">
+                        <div class="term-badge">BULL MARKET</div>
+                        <h4>Bull Market</h4>
+                        <p>A financial market condition where stock prices are continuously rising or expected to rise.</p>
+                    </div>
+
+                    <div class="glossary-card theme-glass-card">
+                        <div class="term-badge">CPI</div>
+                        <h4>Consumer Price Index</h4>
+                        <p>A statistical metric examining price changes in a basket of everyday consumer goods and services.</p>
+                    </div>
+
+                    <div class="glossary-card theme-glass-card">
+                        <div class="term-badge">VOLATILITY</div>
+                        <h4>Market Volatility</h4>
+                        <p>The speed and magnitude of price changes for a stock or market index over a given period.</p>
+                    </div>
+
+                    <div class="glossary-card theme-glass-card">
+                        <div class="term-badge">DIVIDEND</div>
+                        <h4>Dividend</h4>
+                        <p>A portion of corporate profits paid directly to shareholders as a return on investment.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section class="how-it-works-section" id="how-it-works">
+            <div class="container">
+                <div class="text-center section-header-centered">
+                    <span class="badge-pill">Workflow Process</span>
+                    <h2 class="section-title">How FinNews AI Works</h2>
+                    <p class="section-subtitle">Four seamless steps from raw financial articles to simplified human understanding.</p>
+                </div>
+
+                <div class="steps-grid">
+                    <div class="step-card theme-glass-card">
+                        <div class="step-number">01</div>
+                        <div class="step-icon-wrapper">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 11a9 9 0 0 1 9 9"/><path d="M4 4a16 16 0 0 1 16 16"/><circle cx="5" cy="19" r="1"/></svg>
+                        </div>
+                        <h3 class="step-title">NewsAPI Ingestion</h3>
+                        <p class="step-desc">Retrieve real-time financial news articles from global and Indian financial news publishers.</p>
+                    </div>
+
+                    <div class="step-card theme-glass-card">
+                        <div class="step-number">02</div>
+                        <div class="step-icon-wrapper">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+                        </div>
+                        <h3 class="step-title">FastAPI Backend</h3>
+                        <p class="step-desc">Process and manage news requests asynchronously using a Python REST API server.</p>
+                    </div>
+
+                    <div class="step-card theme-glass-card">
+                        <div class="step-number">03</div>
+                        <div class="step-icon-wrapper">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a8 8 0 0 0-8 8c0 5.25 7 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z"/><circle cx="12" cy="10" r="3"/></svg>
+                        </div>
+                        <h3 class="step-title">Groq + Llama 3.3</h3>
+                        <p class="step-desc">Analyze financial terminology, extract key takeaways, and compute sentiment using ultra-fast LLM inference.</p>
+                    </div>
+
+                    <div class="step-card theme-glass-card">
+                        <div class="step-number">04</div>
+                        <div class="step-icon-wrapper">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                        </div>
+                        <h3 class="step-title">FinNews AI Dashboard</h3>
+                        <p class="step-desc">Present clear, intuitive, and interactive financial news summaries with Chatbook AI support on the web.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Platform Features Section -->
+        <section class="tech-stack-section" id="features">
+            <div class="container">
+                <div class="text-center section-header-centered">
+                    <h2 class="section-title">Platform Features</h2>
+                    <p class="section-subtitle">Core capabilities powering FinNews AI market intelligence.</p>
+                </div>
+
+                <div class="tech-grid">
+                    <div class="tech-card theme-glass-card">
+                        <div class="tech-icon-box">📰</div>
+                        <h4>Real-Time News</h4>
+                        <p>Live news feed coverage across global financial markets and stock exchanges.</p>
+                    </div>
+
+                    <div class="tech-card theme-glass-card">
+                        <div class="tech-icon-box">⚡</div>
+                        <h4>AI Simplification</h4>
+                        <p>Instant bullet-point summaries breaking down complex financial headlines.</p>
+                    </div>
+
+                    <div class="tech-card theme-glass-card">
+                        <div class="tech-icon-box">📚</div>
+                        <h4>Jargon Glossary</h4>
+                        <p>Interactive tooltips defining economic terms like Repo Rate, Inflation & EBITDA.</p>
+                    </div>
+
+                    <div class="tech-card theme-glass-card">
+                        <div class="tech-icon-box">🎓</div>
+                        <h4>Audience Modes</h4>
+                        <p>Tailored explanation levels for Beginners, Investors, and Finance Students.</p>
+                    </div>
+
+                    <div class="tech-card theme-glass-card">
+                        <div class="tech-icon-box">✨</div>
+                        <h4>Gemini AI Chatbook</h4>
+                        <p>Intelligent assistant answering questions on stock trends and financial news.</p>
+                    </div>
+
+                    <div class="tech-card theme-glass-card">
+                        <div class="tech-icon-box">🔖</div>
+                        <h4>Saved Articles</h4>
+                        <p>Bookmark articles for offline reference and personalized reading lists.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about-section" id="about">
+            <div class="container">
+                <div class="about-card theme-glass-card">
+                    <div class="about-content">
+                        <span class="badge-pill">Financial Intelligence</span>
+                        <h2 class="about-title">About FinNews AI</h2>
+                        <p class="about-text">
+                            FinNews AI is a financial news simplification platform designed to make complex financial headlines, economic policies, and market jargon clear for everyone.
+                        </p>
+                        <p class="about-text">
+                            Combining real-time news retrieval with Generative AI analysis, it breaks down articles into simple takeaways, key bullet points, and plain-English term explanations so anyone can follow market trends.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Floating Chatbook Button (Bottom Right Widget) -->
+    <div class="floating-chatbook-trigger" id="floating-chatbook-btn" title="Open AI Financial Chatbook">
+        <span class="chat-icon-emoji">💬</span>
+        <span class="chat-btn-text">Chatbook AI</span>
+    </div>
+
+    <!-- Article Detail Modal -->
+    <div class="modal-backdrop hidden" id="article-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <div class="modal-container theme-glass-card">
+            <div class="modal-header">
+                <div class="modal-badge-wrapper">
+                    <span class="category-pill" id="modal-category">MARKETS</span>
+                    <span class="modal-source" id="modal-source">Reuters • 2 hours ago</span>
+                </div>
+                <button class="modal-close-btn" id="modal-close-btn" aria-label="Close detail modal">&times;</button>
+            </div>
+
+            <div class="modal-body" id="modal-body-content">
+                <!-- Headline -->
+                <h2 class="modal-title" id="modal-title">Article Headline Goes Here</h2>
+
+                <!-- Modal Banner Image -->
+                <div class="modal-media-wrapper">
+                    <img id="modal-image" src="" alt="Article image" onerror="this.src='https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=800&q=80'">
+                </div>
+
+                <!-- View Toggle Bar: Original vs AI Simplified -->
+                <div class="modal-view-toggle-bar">
+                    <button class="modal-tab-btn active" id="btn-modal-tab-ai">🤖 AI Simplified</button>
+                    <button class="modal-tab-btn" id="btn-modal-tab-original">📰 Original Article</button>
+                </div>
+
+                <!-- Original Description excerpt (Shown when Original Tab is Active) -->
+                <div class="modal-original-excerpt hidden" id="modal-original-box">
+                    <strong>Original Published Article:</strong>
+                    <p id="modal-description">Detailed description text...</p>
+                </div>
+
+                <!-- AI SIMPLIFIED STRUCTURED BREAKDOWN -->
+                <div class="ai-simplified-box" id="modal-ai-box">
+                    <!-- In 30 Seconds Flash Summary Card -->
+                    <div class="modal-recap-banner">
+                        <div class="recap-label">⚡ IN 30 SECONDS</div>
+                        <p class="recap-text" id="modal-recap-text">Quick 1-sentence recap...</p>
+                    </div>
+
+                    <!-- Explain Like I'm... Audience Selector -->
+                    <div class="audience-level-selector">
+                        <span class="selector-label">Explain this as:</span>
+                        <div class="audience-chips">
+                            <button class="audience-chip active" data-level="beginner">Beginner</button>
+                            <button class="audience-chip" data-level="college">College Student</button>
+                            <button class="audience-chip" data-level="finance">Finance Student</button>
+                            <button class="audience-chip" data-level="business">Business Professional</button>
+                        </div>
+                    </div>
+
+                    <div class="ai-box-header">
+                        <span class="ai-badge">🤖 AI SIMPLIFIED SUMMARY</span>
+                        <span class="ai-subtitle font-sm">Generated by Llama 3.3 70B • Educational Summary</span>
+                    </div>
+                    
+                    <div class="modal-summary-section">
+                        <h4>What happened?</h4>
+                        <p id="modal-what-happened">Simple explanation...</p>
+                    </div>
+
+                    <div class="modal-summary-section">
+                        <h4>Why does it matter?</h4>
+                        <p id="modal-why-matters">Financial significance...</p>
+                    </div>
+
+                    <!-- Structured Categorized Impact Grid -->
+                    <div class="modal-summary-section">
+                        <h4>Why This Matters (Categorized Impact)</h4>
+                        <div class="categorized-impact-grid">
+                            <div class="impact-card">
+                                <div class="impact-header"><span class="impact-icon">🏦</span> Banks</div>
+                                <p class="impact-desc" id="impact-banks">Bank lending rates & interest margins...</p>
+                            </div>
+                            <div class="impact-card">
+                                <div class="impact-header"><span class="impact-icon">🏢</span> Businesses</div>
+                                <p class="impact-desc" id="impact-businesses">Corporate profits & borrowing costs...</p>
+                            </div>
+                            <div class="impact-card">
+                                <div class="impact-header"><span class="impact-icon">👥</span> Consumers</div>
+                                <p class="impact-desc" id="impact-consumers">Loan EMIs & purchasing power...</p>
+                            </div>
+                            <div class="impact-card">
+                                <div class="impact-header"><span class="impact-icon">🌍</span> Economy</div>
+                                <p class="impact-desc" id="impact-economy">GDP trajectory & monetary policy...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AI Sentiment & Importance Badges -->
+                <div class="modal-classification-row">
+                    <span id="modal-sentiment-badge" class="meta-badge sentiment-neutral">AI Sentiment: Neutral</span>
+                    <span id="modal-importance-badge" class="meta-badge importance-medium">AI Importance: Medium</span>
+                    <span class="ai-disclaimer-note">AI-generated sentiment — informational only</span>
+                </div>
+
+                <!-- Key Takeaways -->
+                <div class="takeaways-section">
+                    <h4 class="takeaways-heading">💡 KEY TAKEAWAYS</h4>
+                    <ul class="takeaways-list" id="modal-takeaways">
+                        <!-- Dynamic list -->
+                    </ul>
+                </div>
+
+                <!-- Financial Terms Explained -->
+                <div class="terms-section">
+                    <h4 class="terms-heading">📚 FINANCIAL JARGON TRANSLATOR</h4>
+                    <div class="modal-terms-grid" id="modal-terms">
+                        <!-- Dynamic terms -->
+                    </div>
+                </div>
+
+                <!-- ASK AI ABOUT THIS ARTICLE -->
+                <div class="ask-ai-section">
+                    <h4 class="ask-ai-heading">💬 Ask AI About This Article</h4>
+                    <p class="ask-ai-sub">Ask a question to receive AI-powered contextual explanations based on this story.</p>
+                    
+                    <div class="ask-ai-chips-row">
+                        <button class="ask-ai-chip" data-prompt="What happened?">What happened?</button>
+                        <button class="ask-ai-chip" data-prompt="Explain this like I'm new to finance">Explain like I'm new to finance</button>
+                        <button class="ask-ai-chip" data-prompt="Why does this matter?">Why does this matter?</button>
+                        <button class="ask-ai-chip" data-prompt="Which sector is affected?">Which sector is affected?</button>
+                        <button class="ask-ai-chip" data-prompt="Explain the difficult terms">Explain difficult terms</button>
+                        <button class="ask-ai-chip" data-prompt="Give me a 30-second explanation">30-second summary</button>
+                    </div>
+
+                    <div class="ask-ai-input-group">
+                        <input type="text" id="ask-ai-input" placeholder="Ask a question about this news..." aria-label="Ask AI a question about this news">
+                        <button class="btn btn-primary btn-sm btn-pill" id="btn-ask-ai-submit">Ask AI</button>
+                    </div>
+
+                    <div class="ask-ai-response-container hidden" id="ask-ai-response">
+                        <!-- AI Response rendered dynamically -->
+                    </div>
+                </div>
+
+                <!-- RELATED NEWS -->
+                <div class="related-news-section">
+                    <h4 class="related-heading">📰 Related News Stories</h4>
+                    <div class="related-grid" id="modal-related-articles">
+                        <!-- Dynamic related articles -->
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="modal-footer">
+                <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-pill" id="modal-read-original-btn">
+                    Read Original Article
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                </a>
+                <button class="btn btn-secondary btn-pill" id="modal-save-btn">☆ Save Article</button>
+                <button class="btn btn-outline btn-pill" id="modal-dismiss-btn">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Interactive Term Floating Tooltip Popover -->
+    <div class="term-tooltip-popover hidden" id="term-tooltip" role="tooltip">
+        <div class="tooltip-header" id="tooltip-term-name">Term Name</div>
+        <div class="tooltip-body" id="tooltip-term-exp">Term Explanation...</div>
+    </div>
+
+    <!-- API Key Settings Modal -->
+    <div class="modal-backdrop hidden" id="api-keys-modal" role="dialog" aria-modal="true" aria-labelledby="api-keys-modal-title">
+        <div class="modal-content modal-md theme-glass-modal">
+            <div class="modal-header">
+                <div class="modal-title-wrap">
+                    <span class="modal-badge-icon">⚙️</span>
+                    <div>
+                        <h2 class="modal-title" id="api-keys-modal-title">API Keys Configuration</h2>
+                        <p class="modal-subtitle">Connect Google Gemini API & News API for custom real-time responses.</p>
+                    </div>
+                </div>
+                <button class="btn-icon modal-close-btn" id="api-keys-modal-close-btn" aria-label="Close modal">✕</button>
+            </div>
+
+            <div class="modal-body api-keys-form">
+                <div class="api-key-group">
+                    <label for="input-gemini-key" class="api-key-label">
+                        <span>✨ Google Gemini API Key</span>
+                        <a href="https://aistudio.google.com/app/apikey" target="_blank" rel="noopener noreferrer" class="api-key-link">Get free key ↗</a>
+                    </label>
+                    <input type="password" id="input-gemini-key" class="api-key-input" placeholder="AIzaSy... (leave blank to use server environment key)">
+                    <small class="api-key-help">Powers Chatbot generative answers & custom article simplifications.</small>
+                </div>
+
+                <div class="api-key-group">
+                    <label for="input-news-key" class="api-key-label">
+                        <span>📰 News API Key</span>
+                        <a href="https://newsapi.org/register" target="_blank" rel="noopener noreferrer" class="api-key-link">Get free key ↗</a>
+                    </label>
+                    <input type="password" id="input-news-key" class="api-key-input" placeholder="e.g. 4d8a... (leave blank to use curated news engine)">
+                    <small class="api-key-help">Fetches live global financial headlines directly from NewsAPI.org.</small>
+                </div>
+
+                <div class="api-key-status-box" id="api-keys-status-msg">
+                    🔒 API keys are stored locally in your browser session or securely processed via your backend API.
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button class="btn btn-primary btn-pill" id="btn-save-api-keys">Save API Keys</button>
+                <button class="btn btn-outline btn-pill" id="btn-clear-api-keys">Clear Saved Keys</button>
+                <button class="btn btn-secondary btn-pill" id="btn-close-api-keys-modal">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-container">
+            <div class="footer-col brand-col">
+                <div class="footer-logo">
+                    <span class="brand-name">FinNews <span class="brand-ai">AI</span></span>
+                </div>
+                <p class="footer-tagline">Financial Intelligence Platform</p>
+                <p class="footer-desc">Empowering financial literacy through real-time news intelligence and AI article simplification.</p>
+                <div class="footer-badge">Market Intelligence Platform</div>
+            </div>
+
+            <div class="footer-col links-col">
+                <h4 class="footer-heading">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#explorer">News Explorer</a></li>
+                    <li><a href="#chatbook">Chatbook AI</a></li>
+                    <li><a href="#glossary">Glossary</a></li>
+                    <li><a href="#how-it-works">How It Works</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col tech-col">
+                <h4 class="footer-heading">Platform Features</h4>
+                <ul class="footer-tech-list">
+                    <li>Real-Time Financial News</li>
+                    <li>AI Article Simplification</li>
+                    <li>Interactive Term Glossary</li>
+                    <li>Multi-Level Audience Views</li>
+                    <li>Google Gemini AI Chatbook</li>
+                </ul>
+            </div>
+
+            <div class="footer-col disclaimer-col">
+                <h4 class="footer-heading">Disclaimer</h4>
+                <p class="footer-disclaimer-text">
+                    AI-generated summaries, Chatbook responses, and term tooltips are for informational and educational purposes only and do not constitute financial advice.
+                </p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container bottom-content">
+                <p>&copy; 2026 FinNews AI. Real-Time Financial News & Market Intelligence Platform.</p>
+                <p class="footer-light-mode-badge">✨ Live Edition</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Modules -->
+    <script src="js/api.js?v=4.0"></script>
+    <script src="js/filters.js?v=4.0"></script>
+    <script src="js/ui.js?v=4.0"></script>
+    <script src="js/app.js?v=4.0"></script>
+</body>
+</html>
